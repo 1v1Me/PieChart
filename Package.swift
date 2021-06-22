@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "PieChart",
+    platforms: [
+        // Specifying that this package can be used with iOS 13+
+        .iOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
